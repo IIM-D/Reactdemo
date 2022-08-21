@@ -1,0 +1,34 @@
+const name = '专属浪漫列表'
+const getLove = ()=>{
+  return 520
+}
+const flag = true
+
+const books = [
+  { id: 1, name: 'luckyNum 7'},
+  { id: 2, name: '爱吃 螺蛳粉'},
+  { id: 3, name: '超级可爱'},
+  { id: 4, name: '未来去海边'},
+  { id: 5, name: '走遍世界'},
+  { id: 4, name: '......'},
+]
+
+function App() {
+
+  return (
+    <div className="App">
+
+      { name }
+      { getLove() }
+      { flag ? '(❤ ω ❤) =>  u very much!':'foever'}
+
+      <ul>
+        { books.map(book=> <li key={book.id}>{book.name}</li>)}
+      </ul>
+
+    </div>
+  );
+
+}
+
+export default App;
