@@ -1,0 +1,21 @@
+const application = '网易云'
+const Aged = 'APP'
+
+//原生JS方法
+const getAge = () => {
+  return 6+ 'years'
+}
+const flag = false
+
+function App() {
+  return (
+    <div className="App">
+      {application}
+      {Aged}
+      {getAge ()}
+      {flag ? 'NICE':'ummm'}
+    </div>
+  )
+}
+
+export default App
