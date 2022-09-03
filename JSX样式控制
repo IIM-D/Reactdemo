@@ -1,0 +1,61 @@
+//行内样式-字体加颜色
+function App() {
+  return (
+    <div className="App">
+        <span style={{color:'yellow', fontSize:'80px'}}>this is banana</span>
+    </div>
+  )
+}
+export default App;
+
+//提高上面代码可读性
+const style = {
+  color:'blue',
+  fontSize:'60px'
+}
+function App() {
+  return (
+    <div className="App">
+      <span style={style}>
+        {getHtag(1)}
+        </span>
+    </div>
+  )
+}
+export default App;
+
+
+
+
+//类名样式控制
+
+//App.css
+.active{
+    color: blueviolet;
+}
+
+//App.js
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+        <span className='active'> 类名样式测试 </span>
+    </div>
+  )
+}
+export default App;
+
+
+//jsx动态类名控制
+const activeFlag = false
+
+function App() {
+  return (
+    <div className="App">
+        <span className={activeFlag?'active':''}> apple </span>
+    </div>
+  )
+}
+
+export default App;
