@@ -1,0 +1,26 @@
+//三元表达式
+const flag = true
+function App() {
+  return(
+    <div className ="App">
+      {flag ? (
+      <div>
+        <span> this is rose </span>
+      </div>   ):null}
+     </div>
+      )
+  }
+export default App;
+
+//逻辑运算
+function App() {
+
+  return (
+    <div className="App">
+
+      {true && <span>this is mirror</span>}
+    </div>
+  )
+}
+
+export default App;
